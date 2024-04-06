@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 1;
+        padding: 0;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body{
+        background-color: blanchedalmond;
+    }
+
+    ul{
+        list-style: none;
+        background-color: #333332;
+        margin: 0;
+        text-align: center;
+    }
+
+    ul li{
+        display: inline-block;
+        position: relative;
+    }
+
+    ul li a{
+        color: blanchedalmond;
+        display: block;
+        font-size: 19px;
+        text-decoration: none;
+        padding: 30px 200.2px;
+    }
+
+    ul li a:hover{
+        background-color: #545555;
+    }
+
+    .aboutDropdown li{
+        display: block;
+    }
+
+    .aboutDropdown{
+        width: 100%;
+        position: absolute;
+        z-index: 5;
+        display: none;
+    }
+
+    .servicesDropdown li{
+        display: block;
+    }
+
+    .servicesDropdown{
+        width: 100%;
+        position: absolute;
+        z-index: 5;
+        display: none;
+    }
+
+    ul li:hover ul.aboutDropdown{
+        display: block;
+        padding: 0;
+    }
+
+    ul li:hover ul.servicesDropdown{
+        display: block;
+        padding: 0;
+    }
+
+</style>
+
+<body>
+    <ul>
+        <li><a href="home">Home</a></li>
+        <li>
+            <a href="about">About</a>
+            <ul class="aboutDropdown">
+                <li><a href="history">History</a></li>
+                <li><a href="team">Team</a></li>
+                <li><a href="mission">Mission</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="services">Services</a>
+            <ul class="servicesDropdown">
+                <li><a href="web">Web Design</a></li>
+                <li><a href="seo">SEO</a></li>
+                <li><a href="social">Social Media</a></li>
+            </ul>
+        </li>
+        <li><a href="contact">Contact</a></li>
+    </ul>
+</body>
+</html>
